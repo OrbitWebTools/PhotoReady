@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- 🚀 ULTIMATE SEO & META TAGS -->
     <title>Photo Compressor to 50KB & Add Date on Photo Online (2026 Govt Exams)</title>
     <meta name="description" content="Ultimate free tool for government exam form fill up. Compress image to 20kb, 50kb, 100kb, or 1mb. Add date on photo online for SSC, UPSC. 100% Private & Free.">
     <meta name="keywords" content="photo compressor to 50kb, add date on photo online, government exam form fill up 2026, compress image to 50kb online, signature compressor to 50kb, photo compress under 20 kb, 1 mb size image download, compress image to 1mb jpg, add date on photo for ssc, reduce photo under 20kb, photo convert into 20 kb to 50 kb jpg">
-    <meta name="author" content="PhotoReady">
+    <meta name="author" content="PhotoReady Labs">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="canonical" href="https://photoready.in/">
+    <link rel="canonical" href="https://orbitwebtools.github.io/PhotoReady/">
 
+    <!-- Social Media / Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orbitwebtools.github.io/PhotoReady/">
     <meta property="og:title" content="Elite Photo Compressor & Date Adder for Government Exams">
     <meta property="og:description" content="Resize, compress under 20KB-50KB, and insert Date of Photo (DOP) instantly without losing quality. Required for all 2026 Govt forms.">
-    <meta property="og:image" content="https://photoready.in/banner.jpg">
+    <meta property="og:image" content="https://orbitwebtools.github.io/PhotoReady/banner.jpg">
 
+    <!-- JSON-LD WebApp Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,6 +36,7 @@
     }
     </script>
 
+    <!-- JSON-LD FAQ Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -52,6 +56,7 @@
     }
     </script>
 
+    <!-- 💎 PREMIUM FONTS & TAILWIND CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
@@ -61,7 +66,7 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['"Space Grotesk"', 'sans-serif'] },
-                    colors: { brand: '#8b5cf6', accent: '#3b82f6' }
+                    colors: { brand: '#8b5cf6', accent: '#3b82f6', whatsapp: '#25D366' }
                 }
             }
         }
@@ -72,251 +77,240 @@
         body::before, body::after { content: ''; position: fixed; border-radius: 50%; filter: blur(140px); z-index: -1; pointer-events: none; }
         body::before { width: 50vw; height: 50vh; background: rgba(59, 130, 246, 0.12); top: -10%; left: -10%; }
         body::after { width: 60vw; height: 60vh; background: rgba(139, 92, 246, 0.12); bottom: -20%; right: -10%; }
+        
         .glass-panel { background: rgba(20, 20, 35, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); }
         .premium-input { background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.3s ease; }
         .premium-input:focus { border-color: #8b5cf6; box-shadow: 0 0 15px rgba(139, 92, 246, 0.3); outline: none; }
-        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); cursor: pointer; transition: 0.2s; box-shadow: 0 0 15px rgba(139, 92, 246, 0.6); border: 2px solid #fff; }
-        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+        
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); cursor: pointer; transition: 0.2s; border: 2px solid #fff; }
+        input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); box-shadow: 0 0 20px rgba(139, 92, 246, 0.8); }
+        
+        /* Smooth Entrance Animations */
         .fade-in { animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; transform: translateY(20px); }
-        .delay-1 { animation-delay: 0.15s; } .delay-2 { animation-delay: 0.3s; }
+        .delay-1 { animation-delay: 0.15s; } 
+        .delay-2 { animation-delay: 0.3s; }
         @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+        /* Canvas Output Glow */
+        .canvas-glow { box-shadow: 0 0 30px rgba(16, 185, 129, 0.15); }
+
+        /* Accordion Animation */
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
 </head>
 
 <body class="min-h-screen flex flex-col items-center">
 
-    <nav class="w-full max-w-7xl px-6 py-6 flex justify-between items-center fade-in z-50">
+    <!-- 🌐 NAVIGATION -->
+    <nav class="w-full max-w-7xl px-6 py-6 flex justify-between items-center z-50">
         <a href="/" class="flex items-center gap-2 group">
-            <span class="text-3xl group-hover:scale-110 transition-transform">📸</span>
-            <span class="font-display text-2xl font-bold tracking-tight text-white">Photo<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Ready</span></span>
+            <!-- CUSTOM LOGO (Upload 'logo.png' in root directory) -->
+            <img src="logo.png" alt="PhotoReady Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+            
+            <!-- FALLBACK TEXT LOGO -->
+            <div id="fallback-logo" class="hidden items-center gap-2">
+                <span class="text-3xl group-hover:scale-110 transition-transform duration-300">📸</span>
+                <span class="font-display text-2xl font-bold tracking-tight text-white">Photo<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Ready</span></span>
+            </div>
         </a>
         <div class="hidden md:flex gap-8 text-sm font-semibold text-white/60">
             <a href="#tool" class="hover:text-white transition-colors">Compressor Engine</a>
-            <a href="#documentation" class="hover:text-white transition-colors">Exam Guidelines</a>
-            <a href="#about" class="hover:text-white transition-colors">Our Vision</a>
-            <a href="#privacy" class="hover:text-white transition-colors">Data Privacy</a>
+            <!-- Link to the upcoming documentation file -->
+            <a href="documentation.html" class="text-purple-400 hover:text-purple-300 transition-colors">Full Documentation</a>
         </div>
     </nav>
 
-    <header class="w-full max-w-5xl px-5 mt-10 mb-12 text-center fade-in delay-1 z-10">
-        <div class="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-6">
-            Government Exam Form Fill Up Date 2026 Official Setup
+    <!-- 🚀 HERO SECTION -->
+    <header class="w-full max-w-5xl px-5 mt-4 mb-12 text-center z-10 fade-in delay-1">
+        <div class="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+            Government Exam Form Fill Up Date 2026 Setup
         </div>
         <h1 class="font-display text-4xl sm:text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-white/40 leading-tight mb-6">
-            Compress, Resize & Add Date <br class="hidden md:block"> Without Losing Quality.
+            Compress, Resize & Add Date <br class="hidden md:block"> Without Quality Loss.
         </h1>
         <p class="text-white/60 text-sm md:text-lg font-medium max-w-3xl mx-auto leading-relaxed">
-            The ultimate utility for Indian students. Compress image to 50kb online, photo convert into 20 kb to 50 kb jpg, or perform a heavy 1 mb size image converter pdf alternative. Add your Date of Photo (DOP) instantly.
+            The ultimate utility for Indian students. Compress image to 50kb online, photo convert into 20 kb to 50 kb jpg, or perform a heavy 1 mb size image converter pdf alternative.
         </p>
     </header>
 
-    <main id="tool" class="w-full max-w-4xl px-5 mb-24 z-10 fade-in delay-2">
-        <div class="glass-panel rounded-[2rem] p-6 sm:p-10 shadow-2xl border-t border-white/20">
+    <!-- 🎛️ MEGA UTILITY HUB -->
+    <main id="tool" class="w-full max-w-4xl px-5 mb-16 z-10 fade-in delay-2">
+        <div class="glass-panel rounded-[2rem] p-6 sm:p-10 shadow-2xl border-t border-white/20 relative overflow-hidden">
             
-            <div id="dropZone" class="border-2 border-dashed border-white/20 hover:border-purple-500/60 bg-white/[0.01] rounded-2xl p-12 text-center cursor-pointer transition-all duration-300 hover:bg-purple-500/5 group">
-                <div class="w-20 h-20 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all duration-500">
-                    <span class="text-3xl text-white/50 group-hover:text-white">📤</span>
+            <!-- Upload Dropzone -->
+            <div id="dropZone" class="border-2 border-dashed border-white/20 hover:border-purple-500/60 bg-white/[0.01] rounded-2xl p-12 text-center cursor-pointer transition-all duration-300 group">
+                <div class="w-20 h-20 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all duration-500 shadow-lg">
+                    <span class="text-3xl text-white/50 group-hover:text-white transition-colors">📤</span>
                 </div>
                 <h3 class="text-white font-semibold text-xl tracking-wide mb-2">Upload Photograph or Signature</h3>
                 <p class="text-white/40 text-sm font-medium">Supports JPG, PNG, HEIC. Auto-converts to Standard Formats.</p>
             </div>
             <input type="file" id="fileIn" class="hidden" accept="image/*">
 
+            <!-- Active Editor Interface -->
             <div id="editor" class="hidden space-y-8">
                 
+                <!-- File Context & Presets -->
                 <div class="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center bg-black/30 rounded-xl p-4 border border-white/5">
                     <div class="flex items-center gap-4">
                         <img id="pThumb" class="w-12 h-14 object-cover rounded-lg border border-white/20 shadow-md">
                         <div>
                             <span id="pFileName" class="block text-white font-medium text-sm truncate max-w-[150px] sm:max-w-[200px]"></span>
-                            <button onclick="document.getElementById('fileIn').click()" class="text-[10px] text-purple-400 hover:text-white uppercase font-bold tracking-widest mt-1">Change File</button>
+                            <button onclick="document.getElementById('fileIn').click()" class="text-[10px] text-purple-400 hover:text-white uppercase font-bold tracking-widest mt-1 transition-colors">Change File</button>
                         </div>
                     </div>
                     
                     <div class="flex flex-wrap gap-2 w-full md:w-auto">
-                        <button onclick="applyPreset('ssc')" class="flex-1 md:flex-none text-[10px] font-bold uppercase tracking-wider px-3 py-2 bg-blue-500/20 hover:bg-blue-500/40 text-blue-300 rounded border border-blue-500/30 transition-all">SSC Photo (50KB)</button>
-                        <button onclick="applyPreset('sign')" class="flex-1 md:flex-none text-[10px] font-bold uppercase tracking-wider px-3 py-2 bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-300 rounded border border-emerald-500/30 transition-all">Signature (<20KB)</button>
+                        <button onclick="applyPreset('ssc')" class="flex-1 md:flex-none text-[10px] font-bold uppercase tracking-wider px-3 py-2 bg-blue-500/20 hover:bg-blue-500/40 text-blue-300 rounded border border-blue-500/30 transition-all">SSC (50KB)</button>
+                        <button onclick="applyPreset('sign')" class="flex-1 md:flex-none text-[10px] font-bold uppercase tracking-wider px-3 py-2 bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-300 rounded border border-emerald-500/30 transition-all">Sign (<20KB)</button>
                         <button onclick="applyPreset('pan')" class="flex-1 md:flex-none text-[10px] font-bold uppercase tracking-wider px-3 py-2 bg-orange-500/20 hover:bg-orange-500/40 text-orange-300 rounded border border-orange-500/30 transition-all">Doc (1MB)</button>
                     </div>
                 </div>
 
+                <!-- Dimensions & Format -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div>
                         <label class="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Width (px)</label>
-                        <input type="number" id="widthIn" value="275" class="w-full premium-input rounded-lg p-3 text-white text-sm font-semibold text-center">
+                        <input type="number" id="widthIn" value="275" class="w-full premium-input rounded-lg p-3 text-white text-sm text-center">
                     </div>
                     <div>
                         <label class="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Height (px)</label>
-                        <input type="number" id="heightIn" value="354" class="w-full premium-input rounded-lg p-3 text-white text-sm font-semibold text-center">
+                        <input type="number" id="heightIn" value="354" class="w-full premium-input rounded-lg p-3 text-white text-sm text-center">
                     </div>
                     <div class="col-span-2">
                         <label class="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Output Format</label>
-                        <select id="formatIn" class="w-full premium-input rounded-lg p-3 text-white text-sm font-semibold appearance-none">
-                            <option value="image/jpeg">JPG / JPEG (Standardized)</option>
-                            <option value="image/png">PNG (Lossless Transparency)</option>
+                        <select id="formatIn" class="w-full premium-input rounded-lg p-3 text-white text-sm">
+                            <option value="image/jpeg">JPG / JPEG</option>
+                            <option value="image/png">PNG</option>
                         </select>
                     </div>
                 </div>
 
+                <!-- Name & Date -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 p-5 bg-white/[0.02] border border-white/5 rounded-2xl">
                     <div>
                         <label class="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Candidate Name</label>
-                        <input type="text" id="nameIn" placeholder="RAHUL SHARMA" autocomplete="off" spellcheck="false" class="w-full premium-input rounded-xl p-3 text-white uppercase text-sm font-semibold">
+                        <input type="text" id="nameIn" placeholder="RAHUL SHARMA" autocomplete="off" spellcheck="false" class="w-full premium-input rounded-xl p-3 text-white uppercase text-sm">
                     </div>
                     <div>
                         <label class="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Date of Photo (DOP)</label>
-                        <input type="date" id="dateIn" class="w-full premium-input rounded-xl p-3 text-white text-sm font-semibold [color-scheme:dark]">
+                        <input type="date" id="dateIn" class="w-full premium-input rounded-xl p-3 text-white text-sm [color-scheme:dark]">
                     </div>
                 </div>
 
+                <!-- Compressor Engine -->
                 <div class="premium-input rounded-2xl p-6 relative overflow-hidden shadow-inner border border-white/10">
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 pointer-events-none"></div>
-                    <div class="flex justify-between items-end mb-6 relative z-10">
+                    <div class="flex justify-between items-end mb-6">
                         <div>
-                            <span class="block text-sm text-white font-semibold">Bitrate Quality & Compression Target</span>
-                            <span class="block text-xs text-white/50 mt-1">Slide to hit targets: <span class="text-blue-300">20KB</span>, <span class="text-emerald-300">50KB</span>, or <span class="text-purple-300">1MB</span></span>
+                            <span class="block text-sm text-white font-semibold">Compression Target</span>
                         </div>
                         <div class="text-right">
-                            <span class="block text-[10px] text-white/40 uppercase tracking-widest mb-1">Estimated Size</span>
-                            <span id="kbOut" class="text-3xl font-display font-bold text-white tracking-tighter drop-shadow-md">--- KB</span>
+                            <span class="block text-[10px] text-white/40 uppercase tracking-widest mb-1">Live Output Size</span>
+                            <span id="kbOut" class="text-3xl font-display font-bold text-white tracking-tighter transition-colors">--- KB</span>
                         </div>
                     </div>
-                    <input type="range" id="qSlider" min="5" max="100" value="85" class="w-full h-2 bg-white/20 rounded-full relative z-10">
+                    <input type="range" id="qSlider" min="5" max="100" value="85" class="w-full h-2 bg-white/20 rounded-full">
                 </div>
 
-                <button id="genBtn" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white text-sm font-bold px-6 py-5 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-[0_0_30px_rgba(139,92,246,0.4)] uppercase tracking-widest">
-                    ⚡ Compile Final Photograph
+                <button id="genBtn" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white text-sm font-bold px-6 py-5 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-[0_0_30px_rgba(139,92,246,0.3)] uppercase tracking-widest">
+                    ⚡ Compile Photograph
                 </button>
             </div>
 
+            <!-- Download & Share Result -->
             <div id="result" class="hidden mt-10 pt-10 border-t border-white/10 text-center">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-8">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    Matrix Compiled Successfully
-                </div>
-                
                 <div class="flex justify-center mb-8">
-                    <div class="p-2 bg-black/40 rounded-2xl border border-white/10 shadow-2xl relative overflow-hidden">
-                        <canvas id="mainCanvas" class="max-w-full h-auto rounded-xl border border-white/5 relative z-10"></canvas>
+                    <div class="p-2 bg-black/40 rounded-2xl border border-white/10 shadow-2xl">
+                        <canvas id="mainCanvas" class="max-w-full h-auto rounded-xl border border-white/5 canvas-glow transition-all"></canvas>
                     </div>
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <button id="dlBtn" class="flex-[2] bg-white text-black hover:bg-gray-200 text-sm font-bold px-6 py-5 rounded-xl transition-all active:scale-95 uppercase tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                    <button id="dlBtn" class="flex-[2] bg-white text-black hover:bg-gray-200 text-sm font-bold px-6 py-5 rounded-xl transition-all hover:scale-[1.02] active:scale-95 uppercase tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                         ⬇️ Download Secure File
                     </button>
-                    <button id="waBtn" class="flex-1 premium-input text-white hover:bg-white/5 text-sm font-bold px-6 py-5 rounded-xl transition-all active:scale-95 uppercase tracking-widest">
-                        🔗 Share Engine
+                    <!-- 🚨 EXPLICIT WHATSAPP BUTTON (With proper color and hover glow) -->
+                    <button id="waBtn" class="flex-1 bg-whatsapp hover:bg-green-500 text-white text-sm font-bold px-6 py-5 rounded-xl transition-all hover:scale-[1.02] active:scale-95 uppercase tracking-widest flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(37,211,102,0.4)]">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        Share
                     </button>
                 </div>
             </div>
         </div>
     </main>
 
-    <article id="documentation" class="w-full max-w-6xl px-5 pb-32 space-y-16 fade-in delay-2 z-10">
+    <!-- ========================================== -->
+    <!-- 📚 HIDDEN SEO ACCORDIONS (Maintains Clean UI) -->
+    <!-- ========================================== -->
+    <article class="w-full max-w-4xl px-5 pb-24 z-10 fade-in delay-2">
+        <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mb-8 text-center">Frequently Asked Questions & Scenarios</h2>
         
-        <section id="about" class="glass-panel p-8 md:p-12 rounded-3xl">
-            <h2 class="font-display text-3xl md:text-4xl font-extrabold text-white mb-6 border-b border-white/10 pb-4">Our Vision & Mission: Empowering Every Aspirant</h2>
-            <div class="prose prose-invert max-w-none text-white/70 text-base leading-relaxed space-y-6">
-                <p>Welcome to <strong>PhotoReady Labs</strong>. Our mission is deeply rooted in solving a critical issue faced by millions of Indian students: technical form rejections. Every year, countless dreams are shattered simply because a candidate could not correctly format their image for a <strong>government exam form fill up</strong>. Whether they couldn't afford complex software or lacked access to a cyber cafe, the technical barrier of achieving the exact <strong>photo convert into 20 kb to 50 kb jpg</strong> standard has been a massive hurdle.</p>
-                <p>We built this platform to completely democratize document formatting. We analyzed the intricate requirements of the <strong>upcoming government exam form fill up</strong> patterns, tracking exactly <strong>which government exam form fill up is going on</strong> at state and central levels. Our tool is designed for absolute simplicity. Whether you are using a basic smartphone searching for an <strong>add date on photo app</strong>, or working on a desktop looking to <strong>add date on photo online</strong>, our interface seamlessly adapts to your needs.</p>
-                <p>Our vision extends beyond just resizing. We want to ensure that if a student searches for <strong>"how to make photo less than 20kb"</strong> for their signature upload, or needs a heavy <strong>1 mb size image download</strong> for document verification, they find a 100% free, secure, and instant solution right here.</p>
-            </div>
-        </section>
-
-        <section class="glass-panel p-8 md:p-12 rounded-3xl">
-            <h2 class="font-display text-3xl md:text-4xl font-extrabold text-white mb-6 border-b border-white/10 pb-4">Custom Exam Scenarios & Formatting Solutions</h2>
-            <div class="space-y-10">
-                
-                <div>
-                    <h3 class="text-xl font-bold text-blue-400 mb-3">Scenario A: SSC CGL, CHSL & MTS (The DOP Requirement)</h3>
-                    <p class="text-white/70 text-[15px] leading-relaxed">
-                        For Staff Selection Commission (SSC) portals, uploading an outdated image is an automatic disqualification. Candidates must strictly <strong>add date on photo for ssc</strong>. Often, candidates try to <strong>add date on photo canva</strong> or other complicated tools, resulting in blurry texts. Our platform auto-generates the mandatory white bottom strip, perfectly placing your <strong>Date of Photo (DOP)</strong> and name. We guarantee your file will be a flawless <strong>50kb photo size jpg</strong> ready for instant approval.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-bold text-purple-400 mb-3">Scenario B: UPSC Civil Services & State PSC </h3>
-                    <p class="text-white/70 text-[15px] leading-relaxed">
-                        UPSC boards maintain stringent quality parameters. Aspirants searching to <strong>add date on photo for upsc</strong> need absolute clarity without destroying pixel density. You can easily <strong>insert date on photo</strong> directly over the image or at the bottom. Our engine utilizes a lossless <strong>photo compress 50 to 100 kb</strong> algorithm, ensuring that facial features remain identifiable even when heavily compressed. Whether you need to <strong>add date on photo android</strong> or <strong>add date on photo iphone</strong>, the browser handles it identically.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-bold text-emerald-400 mb-3">Scenario C: Signatures, Thumb Impressions & Heavy Documents</h3>
-                    <p class="text-white/70 text-[15px] leading-relaxed">
-                        Thumb impressions and digital signatures require extreme compression. Users constantly ask <strong>what is the size of 20kb photo</strong>? Our tool acts as a dedicated <strong>signature compressor to 50kb</strong> and can easily drop further to act as an <strong>image compressor to 20kb</strong>. Conversely, if you are uploading PAN cards, Aadhar cards, or degree certificates on portals like IBPS, you might require a much larger file. Our tool seamlessly pivots into an HD mode, allowing you to <strong>compress image to 1mb jpg</strong>, <strong>compress image to 1mb png</strong>, or even act as a <strong>1 mb size image converter pdf</strong> alternative for high-res document uploads.
-                    </p>
+        <div class="space-y-4">
+            <!-- Accordion 1 -->
+            <div class="glass-panel rounded-xl overflow-hidden">
+                <button class="w-full px-6 py-5 text-left text-white font-semibold flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
+                    How to make photo less than 20kb for signature upload?
+                    <span class="text-2xl font-light transform transition-transform duration-300 group-hover:text-purple-400">+</span>
+                </button>
+                <div class="accordion-content bg-black/30 px-6">
+                    <p class="text-white/60 text-sm py-5 leading-relaxed">To effectively <strong>reduce photo under 20kb</strong> without rendering it unreadable, you must not only lower the quality but also the dimensions. Select our "Signature" preset, which automatically resizes the canvas to 400x150 pixels. Then, move the slider to the left until the live counter dictates the file acts as a <strong>photo compressor to 10kb</strong> or up to 20kb. This is explicitly required for UPSC and Banking portals.</p>
                 </div>
             </div>
-        </section>
 
-        <section class="glass-panel p-8 md:p-12 rounded-3xl bg-gradient-to-br from-black/60 to-purple-900/10">
-            <h2 class="font-display text-3xl md:text-4xl font-extrabold text-white mb-6 border-b border-white/10 pb-4">The Universal File Size Matrix (10KB to 2MB)</h2>
-            <p class="text-white/60 text-base mb-8">Every portal is different. We have mapped out every possible file size requirement you might encounter during the <strong>government exam form fill up 2026</strong> cycle. Simply adjust our master slider to hit any of these specific targets.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-black/40 p-6 rounded-2xl border border-white/10">
-                    <h3 class="text-lg font-bold text-white mb-4 border-b border-white/5 pb-2">Micro Range (Signatures)</h3>
-                    <p class="text-white/60 text-sm mb-4">When dealing with strict limits, you must efficiently <strong>reduce photo under 20kb</strong>. Our slider enables micro-adjustments to hit:</p>
-                    <ul class="space-y-3 text-white/80 text-sm font-medium">
-                        <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <strong>photo compressor to 10kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <strong>photo compress under 20 kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <strong>photo compressor to 20kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> <strong>photo compressor under 20kb</strong></li>
-                    </ul>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl border border-white/10">
-                    <h3 class="text-lg font-bold text-white mb-4 border-b border-white/5 pb-2">Standard Range (Passports)</h3>
-                    <p class="text-white/60 text-sm mb-4">The most common requirement. Use our tool to execute a flawless <strong>compress image to 50kb online</strong> target, covering:</p>
-                    <ul class="space-y-3 text-white/80 text-sm font-medium">
-                        <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> <strong>photo compressor to 40kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> <strong>photo compressor to 50kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> <strong>compress jpeg to 50kb free</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> <strong>pdf compressor to 50kb</strong> (Via PNG conversion)</li>
-                    </ul>
-                </div>
-
-                <div class="bg-black/40 p-6 rounded-2xl border border-white/10">
-                    <h3 class="text-lg font-bold text-white mb-4 border-b border-white/5 pb-2">Mid to HD Range (Documents)</h3>
-                    <p class="text-white/60 text-sm mb-4">For portal uploads requiring certificates, you can utilize our high-bitrate outputs, such as <strong>compress image to 1mb online</strong>:</p>
-                    <ul class="space-y-3 text-white/80 text-sm font-medium">
-                        <li class="flex items-center gap-2"><span class="text-purple-400">✓</span> <strong>photo compressor to 100kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-purple-400">✓</span> <strong>photo compressor to 200kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-purple-400">✓</span> <strong>photo compressor to 300kb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-purple-400">✓</span> <strong>photo compressor to 1mb</strong> & <strong>to 2mb</strong></li>
-                        <li class="flex items-center gap-2"><span class="text-purple-400">✓</span> <strong>compress image to 1mb i love pdf</strong> (Alternative)</li>
-                    </ul>
+            <!-- Accordion 2 -->
+            <div class="glass-panel rounded-xl overflow-hidden">
+                <button class="w-full px-6 py-5 text-left text-white font-semibold flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
+                    Is this tool safe for sensitive government document uploads?
+                    <span class="text-2xl font-light transform transition-transform duration-300 group-hover:text-purple-400">+</span>
+                </button>
+                <div class="accordion-content bg-black/30 px-6">
+                    <p class="text-white/60 text-sm py-5 leading-relaxed">Absolutely. Privacy is our core foundation. When you <strong>compress image to 1mb jpg free</strong> or execute a <strong>signature compressor to 50kb</strong>, the processing happens entirely within your web browser. There are zero background server uploads. Your personal data remains on your physical device throughout the entire <strong>government exam form fill up 2026</strong> cycle.</p>
                 </div>
             </div>
-        </section>
 
-        <section id="privacy" class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden">
-            <div class="absolute right-0 top-0 w-64 h-64 bg-emerald-500/10 rounded-full filter blur-[100px] pointer-events-none"></div>
-            <h2 class="font-display text-3xl md:text-4xl font-extrabold text-white mb-6 border-b border-white/10 pb-4 flex items-center gap-4">
-                <span class="text-emerald-400">🛡️</span> Comprehensive Privacy Shield
-            </h2>
-            <div class="prose prose-invert max-w-none text-white/70 text-base leading-relaxed space-y-6">
-                <p>In the digital age, uploading personal photographs, signatures, and government-issued identification cards to random third-party websites poses a massive security risk. Whether you are executing a <strong>current government exam form fill up</strong> from your personal laptop or searching for a <strong>government exam form fill up near me</strong> at a public cyber cafe, your data privacy must be absolute.</p>
-                <p>To combat data harvesting, we engineered our <strong>photo convert into 20 kb to 50 kb jpg</strong> algorithm entirely on **Client-Side Technologies**. This means we utilize the powerful HTML5 Canvas API native to your own web browser.</p>
-                <ul class="list-disc pl-6 space-y-4 mt-4 text-white/80 font-medium">
-                    <li><strong class="text-emerald-400">Zero Server Uploads:</strong> When you upload a photo to <strong>add date on photograph</strong>, it is never transmitted over the internet to our servers. Your network bandwidth is barely touched.</li>
-                    <li><strong class="text-emerald-400">Volatile Memory Processing:</strong> The resizing and text-overlay functions happen directly in your device's RAM. The moment you click the download button, or simply close the tab, the image ceases to exist on our end.</li>
-                    <li><strong class="text-emerald-400">Offline Capability:</strong> Because the logic is localized, once the page loads, you can theoretically turn off your internet and still execute a <strong>compress image to 1mb jpg free</strong> function perfectly.</li>
-                </ul>
-                <p>We are strictly against retaining, analyzing, or selling user data. Your biometric data, signature strokes, and personal identifiers remain 100% under your control at all times.</p>
+            <!-- Accordion 3 -->
+            <div class="glass-panel rounded-xl overflow-hidden">
+                <button class="w-full px-6 py-5 text-left text-white font-semibold flex justify-between items-center focus:outline-none group" onclick="toggleAccordion(this)">
+                    How do I add a Date of Photo (DOP) correctly?
+                    <span class="text-2xl font-light transform transition-transform duration-300 group-hover:text-purple-400">+</span>
+                </button>
+                <div class="accordion-content bg-black/30 px-6">
+                    <p class="text-white/60 text-sm py-5 leading-relaxed">Many students struggle and try to edit manually, which often misaligns the text or ruins the aspect ratio. Our tool automates this perfectly. Simply upload your image, fill in the "Candidate Name" and "Date of Photo" fields, and our engine automatically calculates and generates a perfectly aligned white strip at the bottom. This ensures your file strictly complies when you need to <strong>add date on photo for ssc</strong> or UPSC.</p>
+                </div>
             </div>
-        </section>
-
+        </div>
     </article>
 
     <footer class="w-full text-center py-8 border-t border-white/10 text-white/40 text-sm font-medium z-10 bg-black/50">
-        <p>&copy; 2026 PhotoReady Mega Utility Labs. Built with precision and absolute privacy for Indian Students.</p>
+        <p>&copy; 2026 PhotoReady Labs. Built with precision for Indian Students.</p>
     </footer>
 
+    <!-- ========================================== -->
+    <!-- ⚙️ ADVANCED JAVASCRIPT ENGINE              -->
+    <!-- ========================================== -->
     <script>
+        // Smooth Accordion Logic
+        function toggleAccordion(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('span');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(el => {
+                if(el !== content) {
+                    el.style.maxHeight = null;
+                    el.previousElementSibling.querySelector('span').style.transform = 'rotate(0deg)';
+                }
+            });
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(45deg)';
+            }
+        }
+
         const el = (id) => document.getElementById(id);
         const canvas = el('mainCanvas'), ctx = canvas.getContext('2d');
         let loadedImg = null;
@@ -340,7 +334,6 @@
                     el('dropZone').style.display = 'none';
                     el('editor').style.display = 'block';
                     el('result').style.display = 'none';
-                    
                     updateKB();
                 };
                 img.src = ev.target.result;
@@ -381,17 +374,16 @@
             canvas.toBlob((blob) => {
                 if(!blob) return;
                 const kb = (blob.size / 1024).toFixed(1);
-                const kbElement = el('kbOut');
-                kbElement.innerText = kb + " KB";
-                
-                if(kb >= 20 && kb <= 50) {
-                    kbElement.className = "text-4xl font-display font-bold text-emerald-400 tracking-tighter drop-shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-colors";
+                const kbOut = el('kbOut');
+                kbOut.innerText = kb + " KB";
+
+                // Color coding based on targets
+                if (kb >= 20 && kb <= 50) {
+                    kbOut.className = "text-3xl font-display font-bold text-emerald-400 tracking-tighter drop-shadow-[0_0_10px_rgba(16,185,129,0.5)] transition-colors";
                 } else if (kb < 20) {
-                    kbElement.className = "text-4xl font-display font-bold text-blue-400 tracking-tighter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-colors"; 
-                } else if (kb >= 900 && kb <= 1100) {
-                    kbElement.className = "text-4xl font-display font-bold text-purple-400 tracking-tighter drop-shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-colors";
+                    kbOut.className = "text-3xl font-display font-bold text-blue-400 tracking-tighter drop-shadow-[0_0_10px_rgba(59,130,246,0.5)] transition-colors";
                 } else {
-                    kbElement.className = "text-4xl font-display font-bold text-white tracking-tighter transition-colors";
+                    kbOut.className = "text-3xl font-display font-bold text-white tracking-tighter transition-colors";
                 }
             }, format, quality);
         };
@@ -411,12 +403,12 @@
             const dRaw = el('dateIn').value.split('-');
             const d = dRaw.length === 3 ? `DOP: ${dRaw[2]}-${dRaw[1]}-${dRaw[0]}` : "";
             const hasText = n !== "" || d !== "";
-
             const s = hasText ? Math.round(h * 0.24) : 0; 
             
             canvas.width = w; 
             canvas.height = h + s;
 
+            // Strict logic: Fill white background to prevent black backgrounds on transparent PNGs converting to JPG
             if(isJPG) {
                 ctx.fillStyle = "#FFFFFF"; 
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -463,7 +455,8 @@
         };
 
         el('waBtn').onclick = () => {
-            const text = encodeURIComponent("Ultimate Govt Exam Tool 2026: Auto-compress signature to 20KB or photo to 50KB, convert formats, and add DOP instantly. 100% Free & Private. Try it here: https://photoready.in/");
+            // Updated Official Link in WhatsApp sharing
+            const text = encodeURIComponent("Sarkari exam form ke liye photo 50KB karna ho ya Date lagani ho, ye free tool sabse best hai. 100% Secure. Link: https://orbitwebtools.github.io/PhotoReady/");
             window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
         };
     </script>
