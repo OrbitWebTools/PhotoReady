@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://orbitwebtools.github.io/add-date-on-photo/sitemap.xml
+Sitemap: https://orbitwebtools.github.io/PhotoReady/sitemap.xml
